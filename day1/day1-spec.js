@@ -11,4 +11,10 @@ describe('day 1', () => {
       expect(day1.countBlocks(['R5', 'L5', 'R5', 'R3'])).to.equal(12);
     });
   });
+
+  describe('#countBlocksUntilRepeat', () => {
+    it('should return distance in city block distance until repeated location', () => {
+      expect(day1.countBlocksUntilRepeat(['R8', 'R4', 'R4', 'R8'])).to.equal(4);
+    });
+  });
 });
